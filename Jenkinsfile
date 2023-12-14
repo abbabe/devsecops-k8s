@@ -10,7 +10,6 @@ pipeline {
         sh "ls -al"
         
       }
-    }
 
       post {
         always {
@@ -18,6 +17,10 @@ pipeline {
           jacoco execPattern: 'target/jacoco.exec'
         }
       }
-    
+
+
+    }
+
+     
   }
 }
